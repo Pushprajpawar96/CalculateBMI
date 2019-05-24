@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My BMI</title>
+</head>
+<style>
+body{
+    background-color: black;
+}
+
+.title {
+    margin: auto;
+    color: red;
+    text-align: center; 
+    
+}
+
+.content {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+
+.info {
+    font: 15px arial, sans-serif;
+}
+</style>
+
+<body>
+    <section class="content">
+        <h2 class="title">THE BMI</h2>
+        <br>
+        <div class="info">
+            <p>Räkna ut ditt BMI</p>
+            <input class="vikt" id="vikt">
+            <input class="langd" id="langd">
+            <button type="button" onclick="validate()">Submit</button>
+        </div>
+        <div>
+            <p id="result"></p>
+        </div>
+    </section>
+<script src='javascript.js'></script>
+</body>
+</html>
